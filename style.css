@@ -1,0 +1,226 @@
+:root {
+    --primary: #17365d;
+    --secondary: #2f75b5;
+    --accent: #f4b183;
+    --surface: #fff;
+    --text: #1f2937;
+    --radius: 14px;
+    --shadow: 0 8px 24px rgba(0, 0, 0, .12);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background: #f4f7fb;
+}
+
+section, .sidebar {
+    background: var(--surface);
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    margin-top: 2rem;
+}
+
+.hero {
+    position: relative;
+    min-height: 500px;
+    display: grid;
+    place-items: center;
+    color: var(--surface);
+    text-align: center;
+    background-image: url("img/nej_lesgeven.jpg");
+    background-size: cover;
+    background-position: center 25%;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgb(0, 0, 0, .48);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--surface);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .08);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .75rem 2rem;
+    margin: 0;
+    padding: 1rem;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0;
+    border-radius: var(--radius);
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    background-color: var(--primary);
+}
+
+nav a {
+    color: var(--surface);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+nav a:hover, nav a:focus-visible {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+.layout {
+    width: min(1200px, 92%);
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 340px);
+    gap: 2rem;
+    align-items: start;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+}
+
+.project-card {
+    padding: 1.5rem;
+    border-left: 5px solid var(--accent);
+    border-radius: 10px;
+    background-color: #f4f7fb;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow);
+}
+
+.project-icon {
+    display: block;
+    margin-bottom: 1rem;
+    color: var(--primary);
+    font-size: 2.5rem;
+}
+
+.project-card h3, .projectcard p {
+    color: var(--primary);
+}
+
+.sidebar { 
+    position: sticky; 
+    top: 5.5rem; 
+    height: fit-content; 
+}
+
+.sidebar img {
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: var(--shadow);
+    display: block;
+    margin: 0 auto;
+}
+
+.timeline {
+    padding-left: 1.5rem;
+    border-left: 4px solid var(--primary);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -1.96rem;
+    top: .65rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--accent);
+}
+
+.timeline-item time {
+    display: block;
+    color: var(--primary);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.timeline-item omschrijving {
+    margin: .35rem 0 0;
+    padding-left: .65rem;
+    color: var(--text);
+}
+
+form {
+    display: grid;
+    gap: 1rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: .8rem;
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+    font: inherit;
+}
+
+button {
+    justify-self: start;
+    background: var(--primary);
+    color: var(--surface);
+    border: none;
+    border-radius: 8px;
+    padding: .8rem 1.2rem;
+    cursor: pointer;
+}
+
+footer {
+    background-color: var(--primary);
+    color: var(--surface);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--surface);
+    padding: 6px;
+}

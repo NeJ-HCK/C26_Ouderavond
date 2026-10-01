@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn eerste website</title>
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <header id = "home" class = "hero">
+        <div class = "hero-content">
+            <h1>Welkom!</h1>
+            <blockquote>
+                <p>
+                    "Structuur is geen beperking, maar een fundament."
+                    <cite>- aldus NeJ - </cite>
+                </p>
+            </blockquote>
+        </div>
+
+    </header>
+    <nav aria-label= "Hoofdnavigatie">
+        <ul>
+            <li><a href = "#home">Home</a></li>
+            <li><a href = "#about">Over mij</a></li>
+            <li><a href = "#projecten">Projecten</a></li>
+            <li><a href = "#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class = "layout">
+        <main id = "inhoud">
+            <section id = "about"><h2>Over mij</h2></section>
+            <section id = "projecten"><h2>Projecten</h2>
+                <div class = "project-grid">
+                    <article class = "project-card">
+                        <i class = "fa-solid fa-code project-icon" aria-hidden = "true"></i>
+                        <h3>Project 1: Mijn eerste website</h3>
+                        <p>In dit project heb ik een eerste website gemaakt. Het doel was om de basisprincipes van HTML en CSS te leren en toe te passen in een practische context. Ik heb geleerd hoe ik een gestructureerde webpagina kan opbouwen, stijlen kan toepassen en interactieve elementen kan toevoegen.</p>
+                    </article>
+                    <article class = "project-card">
+                        <i class = "fa-solid fa-network-wired project-icon" aria-hidden = "true"></i>
+                        <h3>Project 2: Netwerkopdracht</h3>
+                        <p>In dit project heb ik een eerste website gemaakt. Het doel was om de basisprincipes van HTML en CSS te leren en toe te passen in een practische context. Ik heb geleerd hoe ik een gestructureerde webpagina kan opbouwen, stijlen kan toepassen en interactieve elementen kan toevoegen.</p>
+                    </article>
+                    <article class = "project-card">
+                        <i class = "fa-solid fa-database project-icon" aria-hidden = "true"></i>
+                        <h3>Project 3: Databasebeheer</h3>
+                        <p>In dit project heb ik een eerste website gemaakt. Het doel was om de basisprincipes van HTML en CSS te leren en toe te passen in een practische context. Ik heb geleerd hoe ik een gestructureerde webpagina kan opbouwen, stijlen kan toepassen en interactieve elementen kan toevoegen.</p>
+                    </article>
+                    <article class = "project-card">
+                        <i class = "fa-solid fa-mobile-screen project-icon" aria-hidden = "true"></i>
+                        <h3>Project 4: Mobiele applicatie</h3>
+                        <p>In dit project heb ik een eerste website gemaakt. Het doel was om de basisprincipes van HTML en CSS te leren en toe te passen in een practische context. Ik heb geleerd hoe ik een gestructureerde webpagina kan opbouwen, stijlen kan toepassen en interactieve elementen kan toevoegen.</p>
+                    </article>
+                </div>
+            </section>
+            <section id = "contact"><h2>Contact</h2>
+                <div class = "contact-form">
+                    <h2>Contactformulier</h2>
+                    <form>
+                        <label for = "naam">Naam</label>
+                        <input type = "text" id = "naam" required placeholder="Vul hier uw naam in...">
+
+                        <label for = "email">E-mailadres</label>
+                        <input type = "email" id = "email" required placeholder="Vul hier uw e-mailadres in...">
+
+                        <label for = "bericht">Bericht</label>
+                        <textarea id = "bericht" row = "8" placeholder = "Vul hier uw bericht in..."></textarea>
+
+                        <button type = "submit">Verstuur bericht</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <aside class = "sidebar" aria-labelledby="tijdlijn">
+            <h2 id = "tijdlijn">In het kort</h2>
+            <img src = "img/nej.jpg" alt="Pasfoto NeJ">
+            <h3>Vaardigheden</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>GIT</li>
+            </ul>
+            <h3>Tijdlijn</h3>
+            <div class = "timeline">
+                <div class = "timeline-item">
+                    <time datetime = "1999">1999</time>
+                    <div class = "omschrijving">
+                        Start opleiding docent basisonderwijs
+                    </div>
+                </div>
+                <div class = "timeline-item">
+                    <time datetime = "2003">2003</time>
+                    <div class = "omschrijving">
+                        Start bij CBS"Het Mosterdzaadje"
+                    </div>
+                </div>
+                <div class = "timeline-item">
+                    <time datetime = "2008">2008</time>
+                    <div class = "omschrijving">
+                        Start werkzaamheden voor Klikwereld / Kliksafe
+                    </div>
+                </div>
+                <div class = "timeline-item">
+                    <time datetime = "2009">2009</time>
+                    <div class = "omschrijving">
+                        Start opleiding docent ICT
+                    </div>
+                </div>
+                <div class = "timeline-item">
+                    <time datetime = "2009">2009</time>
+                    <div class = "omschrijving">
+                        Start bij het Hoornbeeck College
+                    </div>
+                </div>
+            </div>
+
+        </aside>
+    </div>
+
+    <footer>
+        <img src = "img/HBC_beeldmerk.jpg" alt = "Beeldmerk HBC"> &copy; 2026 NeJ | Lessen HTML / CSS
+    </footer>
+</body>
+</html>
